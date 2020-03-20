@@ -1,0 +1,158 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Ваш дом</title>
+		<!-- Подключаем CSS -->
+		
+		<!-- bxSlider CSS file -->
+		<link href="slick/slick.css" rel="stylesheet" />
+		<link href="slick/slick-theme.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<!-- @import header.html -->
+
+			<!-- Main-top -->
+			<!-- @import main-top.html -->
+
+				<!-- PickUpStaff -->
+				<div class="PickUpStaff">
+					<div class="container">
+						<h1 class="PickUpStaff__title">Подобрать персонал</h1>
+						<div class="PickUpStaff__checklist">
+							<form class="PickUpStaff__form" action="#" method="POST">
+								<div class="PickUpStaff__showselect">
+									<div class="PickUpStaff__selecttext">
+										Показать только
+									</div>
+									<div class="select">
+										<div class="select__header">
+											<span class="select__current">Няня</span>
+											<div class="select__icon"></div>
+										</div>
+										<div class="select__body">
+											<div class="select__item hidden">Няня</div>
+											<div class="select__item">Гувернантка</div>
+											<div class="select__item">Дворник</div>
+											<div class="select__item">Водитель</div>
+											<div class="select__item">Садовник</div>
+										</div>
+									</div>
+								</div>
+								<div class="PickUpStaff__range">
+									<div class="PickUpStaff__experience">
+										<span>Стаж от </span>
+										<input value="1" type="number" name="experience">
+										<span> до </span>
+										<input value="30" type="number" name="experience">
+										<span> лет </span>
+									</div>
+									<div class="PickUpStaff__age">
+										<span>Возраст от </span>
+										<input value="25" type="number" name="age">
+										<span> до </span>
+										<input value="65" type="number" name="age">
+										<span> лет </span>
+									</div>
+								</div>
+								<div class="PickUpStaff__btn">
+									<input class="btn__pickup" type="button" value="Подобрать">
+								</div>
+							</form>
+						</div>
+
+						<table class="PickUpStaff__table">
+							<tr class="PickUpStaff__table_top">
+								<th>ФИО</th>
+								<th>должность</th>
+								<th>возраст</th>
+								<th>стаж работы</th>
+							</tr>
+							<tr class="PickUpStaff__table_white">
+								<td>Лопухова Надежда Александровна</td>
+								<td>Гувернантка</td>
+								<td>45</td>
+								<td>15 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_whithoutborder">
+								<td>Ермакова Надежда Ивановна</td>
+								<td>Няня</td>
+								<td>30</td>
+								<td>5 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_white">
+								<td>Филимонов Евгений Семенович</td>
+								<td>Садовник</td>
+								<td>50</td>
+								<td>20 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_whithoutborder">
+								<td>Лопухова Надежда Александровна</td>
+								<td>Уборщица</td>
+								<td>35</td>
+								<td>7 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_white">
+								<td>Миронов Юрий Герасимович</td>
+								<td>Конюх</td>
+								<td>60</td>
+								<td>15 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_whithoutborder">
+								<td>Новикова Нина Алексеевна</td>
+								<td>Повар</td>
+								<td>55</td>
+								<td>30 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_white">
+								<td>Лопухова Надежда Александровна</td>
+								<td>Гувернантка</td>
+								<td>45</td>
+								<td>15 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_whithoutborder">
+								<td>Лопухова Надежда Александровна</td>
+								<td>Гувернантка</td>
+								<td>45</td>
+								<td>15 лет</td>
+							</tr>
+							<tr class="PickUpStaff__table_white">
+								<td>Лопухова Надежда Александровна</td>
+								<td>Гувернантка</td>
+								<td>45</td>
+								<td>15 лет</td>
+							</tr>
+						</table>
+
+						<div class="PickUpStaff__text">
+							<p>Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+								Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени</p>
+								<p>Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала. Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка. </p>
+								<p class="line-height">Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу </p>
+						</div>
+					</div>
+				</div>
+
+
+			<!-- Footer -->
+			<!-- @import footer.html -->
+		
+		</div>
+		<!-- jQuery library (served from Google) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- bxSlider Javascript file -->
+		<script src="slick/slick.js"></script>
+		<script src="js/js.js"></script>
+	</body>
+</html>
+

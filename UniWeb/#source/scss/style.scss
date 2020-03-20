@@ -1,0 +1,254 @@
+// Подключаем шрифты
+@font-face {
+	font-family: 'BookAntiqua';
+	src: url('../fonts/BookAntiqua-bold.eot');
+	src: local('☺'), url('../fonts/BookAntiqua-bold.woff') format('woff'), url('../fonts/BookAntiqua-bold.ttf') format('truetype'), url('../fonts/BookAntiqua-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'BookAntiqua';
+	src: url('../fonts/BookAntiqua-reg.eot');
+	src: local('☺'), url('../fonts/BookAntiqua-reg.woff') format('woff'), url('../fonts/BookAntiqua-reg.ttf') format('truetype'), url('../fonts/BookAntiqua-reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GaramondC';
+	src: url('../fonts/GaramondC Bold.eot');
+	src: local('☺'), url('../fonts/GaramondC Bold.woff') format('woff'), url('../fonts/GaramondC Bold.ttf') format('truetype'), url('../fonts/GaramondC Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/Tahoma.eot');
+	src: local('☺'), url('../fonts/Tahoma.woff') format('woff'), url('../fonts/Tahoma.ttf') format('truetype'), url('../fonts/Tahoma.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Verdana';
+	src: url('../fonts/Verdana-bold.eot');
+	src: local('☺'), url('../fonts/Verdana-bold.woff') format('woff'), url('../fonts/Verdana-bold.ttf') format('truetype'), url('../fonts/Verdana-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Verdana';
+	src: url('../fonts/Verdana-reg.eot');
+	src: local('☺'), url('../fonts/Verdana-reg.woff') format('woff'), url('../fonts/Verdana-reg.ttf') format('truetype'), url('../fonts/Verdana-reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//Header
+@import "header.scss";
+
+// Основной контент
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: url('../img/bg1.jpg') -45px -10px/60% repeat-x,
+}
+a {
+	color: #ffffff;
+}
+
+.wrapper {
+	max-width: 918px;
+	margin: 0px auto;
+	background: url('../img/bg_wrapper.jpg') 0 0 no-repeat;
+	box-shadow: 0 8px 18px rgba(89, 55, 38, 0.44);
+}
+.container {
+	max-width: 880px;
+	margin: 0px auto;
+}
+
+.main-top {
+	box-shadow: 0 0.2em 3px rgba(122,122,122,0.5);
+	img {max-height: 321px;}
+
+}
+
+.slick-dots li button {
+	width: 13px;
+	height: 13px;
+	box-shadow: inset 0 2px 3px rgba(51, 27, 2, 0.75);
+	background-color: rgba(199, 109, 2, 0.48);
+	background-color: #e2b67b;
+	border-radius: 50%;
+	margin: 14px 0px 0px 0px;
+	transition: background .8s;
+}
+
+.slick-dots li button:before {
+	display: none;
+}
+.slick-dots li button:hover,
+.slick-dots li.slick-active button {
+	width: 15px;
+	height: 15px;
+	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(101, 46, 2, 0.57);
+	background-color: #7c5a4c;
+	background-color: #4e2c1e;
+}
+
+
+
+.main-middle {
+	height: 300px;
+	&__wrapper {
+		max-width: 808px;
+		margin: 0px auto;
+	}
+	&__wrapper:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	&__left {
+		box-sizing: border-box;
+		width:50%;
+		float: left;
+		padding: 50px 28px 0px 0px;
+	}
+	&__right {
+		box-sizing: border-box;
+		width: 50%;
+		float: right;
+		padding: 50px 0px 0px 28px;
+	}
+	&__title {
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(to top, #150702 0%, #5e3625 48%, #82451c 100%);
+		background-clip: text;
+		color: #4e2c1e;
+		font-family: "Garamond C";      //К сожалению данный шрифт очень странно выглядит на странице
+		font-size: 22px;
+		font-weight: 700;
+		padding: 0px 0px 20px 0px;
+		line-height: 24px;
+	}
+	&__text {
+		color: #35190d;
+		font-size: 13px;
+		line-height: 14px;
+	}
+	&__button {
+		clear: both;
+		margin: 22px 0px 0px 0px;
+		a {
+			padding: 6px 22px;
+			border: 1px solid #ab6e17;
+			background-color: #ab6e17;
+			background-image: linear-gradient(to top, #77470b 0%, #d39538 73%, #f5dcb9 96%, #fff9e0 100%);
+			text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
+			color: #ffffff;
+			font-family: Verdana;
+			font-size: 13px;
+			text-transform: uppercase;
+			border-radius: 7px;
+			transition: all .7s;
+		}
+		a:hover {
+			border: 1px solid #c7a865;
+			background-color: #eac87f;
+			background-image: linear-gradient(to top, #faedc7 0%, #eacf8f 13%, #e8c478 58%, #fff9e0 96%, #fff9e0 100%);
+			color: #4e2c1e;
+		}
+	}
+
+.container-middle {
+	height: 300px;
+	max-width: 891px;
+	background: url('../img/Main-middle/left/ornament_bottom.png') 0 154px no-repeat, 
+				url('../img/Main-middle/right/ornament_bottom.png') 437px 154px no-repeat,
+				url('../img/Main-middle/left/ornament_top.png') 390px 27px no-repeat,
+				url('../img/Main-middle/left/ornament-center.png') 445px 76px no-repeat;
+}
+
+}
+.image-left {
+	box-sizing: border-box;
+	width: 44.946%;
+	float: right;
+	padding: 0px 0px 10px 18px;
+	position: relative;
+	top: -5px;
+}
+.button-left {
+	text-align: right;
+}
+.image-right {
+	box-sizing: border-box;
+	width: 44.946%;
+	float: left;
+	padding: 0px 18px 0px 0px;
+	position: relative;
+	top: -18px;
+}
+.title-right {
+	text-align: right;
+}
+
+
+.main-bottom {
+	
+	&__top {
+		margin: 47px 0px 31px 0px;
+
+	}
+	&__container {
+		max-width: 802px;
+		margin: 0px auto;
+	}
+	&__photos {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__image {
+		padding: 0px 15px;
+		background-color: #fff;
+		border: 1px solid #a08357;
+		img {
+			width: 150px;
+			height: 187px;
+		}
+	}
+	&__bottom {}
+	&__title {
+		color: #4e2c1e;
+		font-size: 24px;
+		margin: 0px 0px 18px 0px;
+	}
+	&__text {
+		margin: 0px 0px 85px 0px;
+		p{
+			color: #4e2c1e;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 0px 0px 25px 0px;
+			text-align: justify;
+		}
+
+		.line-height {line-height: 14px;}
+	}
+}
+
+
+
+//staff.css
+@import "staff.scss";
+
+
+//Footer
+@import "footer.scss";
+
+

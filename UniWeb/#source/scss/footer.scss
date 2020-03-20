@@ -1,0 +1,61 @@
+.footer {
+	&__top {
+		box-shadow: 0 1px 1px rgba(17, 17, 26, 0.86);
+		background-color: #4e2c1e;
+		background-image: linear-gradient(to top, #4e2c1e 0%, #4e2c1e 100%);
+	}
+	&__container {
+		max-width: 838px;
+		margin: 0px auto;
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+	li {
+		a {
+			text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
+			font-size: 11px;
+			text-transform: uppercase;
+			line-height: 43px;
+			padding: 0px 38px;
+			display: inline-block;
+			transition: all .7s;
+		}
+		a:not(.none) {background: url('../../img/Footer/stick.png') 0 18px no-repeat;}
+		a:hover {opacity: 0.6;}
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		background-color: #4e2c1e;
+		background-image: linear-gradient(to top, #ad8b63 0%, #7a583e 100%);
+	}
+	&__tel {
+		font-family: "Garamond C";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 43px;
+		padding: 0px 0px 0px 40px;
+		transition: all .7s;
+	}
+	&__tel:hover {
+		opacity: 0.7;
+	}
+	&__copyright {
+		display: flex;
+		padding: 0px 34px 0px 0px;
+		p {
+			line-height: 43px;
+			text-shadow: 0 1px 0 rgba(17, 17, 26, 0.63);
+			color: #ffffff;
+			font-family: Tahoma;
+			font-size: 11px;
+		}
+		img {
+			margin: 10px 0px 0px 0px;
+			width: 70px;
+			height: 26px;
+		}
+	}
+}
